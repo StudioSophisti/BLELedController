@@ -308,6 +308,13 @@ void SimpleBLEPeripheral_Init( uint8 task_id )
   DevInfo_AddService();                           // Device Information Service
   LedService_AddService();
 
+  
+#if defined ( POWER_SAVING )
+  HCI_EXT_SetTxPowerCmd( HCI_EXT_TX_POWER_0_DBM ); 
+#else
+  HCI_EXT_SetTxPowerCmd( HCI_EXT_TX_POWER_4_DBM ); 
+#endif
+  
   // Enable clock divide on halt
   // This reduces active current while radio is active and CC254x MCU
   // is halted
