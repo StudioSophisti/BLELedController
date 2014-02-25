@@ -121,6 +121,7 @@
 		B027581718BC8DEB007E3925 /* LedController */ = {
 			isa = PBXGroup;
 			children = (
+				B027585018BC9A65007E3925 /* BLE */,
 				B027584F18BC914B007E3925 /* Assets */,
 				B027584E18BC9141007E3925 /* UI */,
 				B027582018BC8DEB007E3925 /* SSAppDelegate.h */,
@@ -178,6 +179,13 @@
 				B027582C18BC8DEB007E3925 /* Images.xcassets */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		B027585018BC9A65007E3925 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BLE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
