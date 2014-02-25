@@ -5,6 +5,8 @@ Control an RGB Led with an iPad and TI's CC254x Bluetooth Low Energy chip. It us
 
 Based on TI's Bluetooth Low Energy SDK version 1.4
 
+Sample application: https://vimeo.com/87564587
+
 ### Contains:
 
 * XCode project with iOS app to control the RGB Led
