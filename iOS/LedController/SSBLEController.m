@@ -64,9 +64,8 @@ static SSBLEController *__instance = nil;
             if ([service.UUIDString isEqualToString:[ledServiceUUID representativeString]]) {
                 for (LGCharacteristic *charac in service.characteristics) {
                     if ([charac.UUIDString isEqualToString:[ledCharUUID representativeString]]) {
-                        [charac writeValue:colorData completion:^(NSError *error) {
-                            NSLog(@"Write complete");
-                        }];
+                        [charac writeValue:colorData completion:nil];
+                        NSLog(@"Write complete");
                     }
                 }
             }
