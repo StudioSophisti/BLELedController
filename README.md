@@ -5,18 +5,18 @@ Control an RGB Led with an iPad and TI's CC254x Bluetooth Low Energy chip. It us
 
 Based on TI's Bluetooth Low Energy SDK version 1.4
 
-## Contains:
+### Contains:
 
 * XCode project with iOS app to control the RGB Led
 * IAR Workbench project with CC254x firmware.
 
-## PIO's used on CC254x:
+### PIO's used on CC254x:
 
 * RED: port 1 pin 1 (Timer 4) 
 * GREEN: port 1 pin 4 (Timer 3) 
 * BLUE: port 0 pin 3 (Timer 1)
 
-## BLE UUIDs:
+### BLE UUIDs:
 
 * Led Service: 3F29121C-XXXX-000A-0001-000000000000 
 * Led Characteristic: 3F29121C-XXXX-000A-0001-000000000000
