@@ -59,7 +59,7 @@ CONST uint8 LedDataCharUUID[ATT_UUID_SIZE] = {
 static CONST gattAttrType_t LedService = { ATT_UUID_SIZE, LedServUUID };
 
 // Led Data Characteristic
-static uint8 LedDataCharProps = GATT_PROP_READ | GATT_PROP_WRITE;
+static uint8 LedDataCharProps = GATT_PROP_READ | GATT_PROP_WRITE | GATT_PROP_WRITE_NO_RSP;
 static uint8 LedDataCharValue[LED_DATA_CHAR_LEN] = { 0, 0, 0, 0, 0, 0 };
 static CONST uint8 LedDataCharUserDesc[] = "Led Data";
 
