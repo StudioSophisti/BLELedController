@@ -18,8 +18,8 @@ Based on TI's Bluetooth Low Energy SDK version 1.4
 
 ### BLE UUIDs:
 
-* Led Service: 3F29121C-XXXX-000A-0001-000000000000 
-* Led Characteristic: 3F29121C-XXXX-000A-0001-000000000000
+* Led Service: 3F29121C-FA01-000A-0001-000000000000 
+* Led Characteristic: 3F29121C-FB01-000A-0001-000000000000
 
 Characteristic value format:
 6 bytes, representing: 
