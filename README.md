@@ -23,5 +23,4 @@ Based on TI's Bluetooth Low Energy SDK version 1.4
 
 Characteristic value format:
 6 bytes, representing: 
-red target value, red speed, green target value, green speed, blue target value, blue speed 
-All values range from 0 - 255, where 0 target value is OFF and 255 full ON, and 0 speed is slow transition and 255 instant transition.
+red target value, red speed, green target value, green speed, blue target value, blue speed. All values range from 0 - 255, where 0 target value is OFF and 255 full ON, and 0 speed is slow transition and 255 instant transition.
