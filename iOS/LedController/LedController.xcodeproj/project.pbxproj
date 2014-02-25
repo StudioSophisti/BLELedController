@@ -23,6 +23,7 @@
 		B027583E18BC8DEC007E3925 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B027583C18BC8DEC007E3925 /* InfoPlist.strings */; };
 		B027584018BC8DEC007E3925 /* LedControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B027583F18BC8DEC007E3925 /* LedControllerTests.m */; };
 		B027584A18BC8E14007E3925 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B027584918BC8E14007E3925 /* CoreBluetooth.framework */; };
+		B027584D18BC9135007E3925 /* SSButtonGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = B027584C18BC9135007E3925 /* SSButtonGridView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		B027583D18BC8DEC007E3925 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B027583F18BC8DEC007E3925 /* LedControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedControllerTests.m; sourceTree = "<group>"; };
 		B027584918BC8E14007E3925 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		B027584B18BC9135007E3925 /* SSButtonGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSButtonGridView.h; sourceTree = "<group>"; };
+		B027584C18BC9135007E3925 /* SSButtonGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSButtonGridView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,13 +121,10 @@
 		B027581718BC8DEB007E3925 /* LedController */ = {
 			isa = PBXGroup;
 			children = (
+				B027584F18BC914B007E3925 /* Assets */,
+				B027584E18BC9141007E3925 /* UI */,
 				B027582018BC8DEB007E3925 /* SSAppDelegate.h */,
 				B027582118BC8DEB007E3925 /* SSAppDelegate.m */,
-				B027582318BC8DEB007E3925 /* Main_iPhone.storyboard */,
-				B027582618BC8DEB007E3925 /* Main_iPad.storyboard */,
-				B027582918BC8DEB007E3925 /* SSViewController.h */,
-				B027582A18BC8DEB007E3925 /* SSViewController.m */,
-				B027582C18BC8DEB007E3925 /* Images.xcassets */,
 				B027581818BC8DEB007E3925 /* Supporting Files */,
 			);
 			path = LedController;
@@ -157,6 +157,27 @@
 				B027583C18BC8DEC007E3925 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B027584E18BC9141007E3925 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B027582318BC8DEB007E3925 /* Main_iPhone.storyboard */,
+				B027582618BC8DEB007E3925 /* Main_iPad.storyboard */,
+				B027582918BC8DEB007E3925 /* SSViewController.h */,
+				B027582A18BC8DEB007E3925 /* SSViewController.m */,
+				B027584B18BC9135007E3925 /* SSButtonGridView.h */,
+				B027584C18BC9135007E3925 /* SSButtonGridView.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		B027584F18BC914B007E3925 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B027582C18BC8DEB007E3925 /* Images.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B027584D18BC9135007E3925 /* SSButtonGridView.m in Sources */,
 				B027582B18BC8DEB007E3925 /* SSViewController.m in Sources */,
 				B027582218BC8DEB007E3925 /* SSAppDelegate.m in Sources */,
 				B027581E18BC8DEB007E3925 /* main.m in Sources */,
