@@ -19,3 +19,11 @@ DerivedData
 
 #CocoaPods
 Pods
+
+# IAR workbench
+Exe/
+List/
+Obj/
+*.dep
+*.dni
+*.wsdt
