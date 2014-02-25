@@ -51,20 +51,30 @@ void LedsSetTarget(LED_Id led, unsigned char target, unsigned char speed) {
 
 void LedsUpdate() {      
     
-  if (red_target > red_current) red_current += red_speed;
-  else if (red_target < red_current) red_current -= red_speed;
+  if (red_target > red_current)  {
+    red_current += red_speed;
+    red_current = MIN(red_target, red_current);
+  } else if (red_target < red_current) {
+    red_current -= red_speed;
+    red_current = MAX(red_target, red_current);
+  }
   
-  if (green_target > green_current) green_current += green_speed;
-  else if (green_target < green_current) green_current -= green_speed;
+  if (green_target > green_current) {
+    green_current += green_speed;
+    green_current = MIN(green_target, green_current);
+  } else if (green_target < green_current) {
+    green_current -= green_speed;
+    green_current = MAX(green_target, green_current);
+  }
   
-  if (blue_target > blue_current) blue_current += blue_speed;
-  else if (blue_target < blue_current) blue_current -= blue_speed;
-    
-  // make sure we stay within 0-0xFF range 
-  red_current = MIN(0xFF, MAX(0, red_current));
-  green_current = MIN(0xFF, MAX(0, green_current));
-  blue_current = MIN(0xFF, MAX(0, blue_current));
-    
+  if (blue_target > blue_current) {
+    blue_current += blue_speed;
+    blue_current = MIN(blue_target, blue_current);
+  } else if (blue_target < blue_current) {
+    blue_current -= blue_speed;
+    blue_current = MAX(blue_target, blue_current);
+  }
+  
   // update pwm duty cycles
   LedSetRed((unsigned char)red_current);
   LedSetGreen((unsigned char)green_current);
