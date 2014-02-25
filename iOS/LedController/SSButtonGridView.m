@@ -7,6 +7,7 @@
 //
 
 #import "SSButtonGridView.h"
+#import "SSBLEController.h"
 
 static NSArray *__colors = nil;
 
@@ -16,15 +17,21 @@ static NSArray *__colors = nil;
 + (NSArray*)colors {
     if (!__colors) {
         __colors = [NSArray arrayWithObjects:
-                    [UIColor colorWithRed:255.0f/255.0f green:000.0f/255.0f blue:000.0f/255.0f alpha:1.0f],
-                    [UIColor colorWithRed:000.0f/255.0f green:255.0f/255.0f blue:000.0f/255.0f alpha:1.0f],
-                    [UIColor colorWithRed:000.0f/255.0f green:000.0f/255.0f blue:255.0f/255.0f alpha:1.0f],
-                    [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:000.0f/255.0f alpha:1.0f],
-                    [UIColor colorWithRed:000.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f],
-                    [UIColor colorWithRed:255.0f/255.0f green:000.0f/255.0f blue:255.0f/255.0f alpha:1.0f],
-                    [UIColor colorWithRed:255.0f/255.0f green:225.0f/255.0f blue:225.0f/255.0f alpha:1.0f],
-                    [UIColor colorWithRed:255.0f/255.0f green:200.0f/255.0f blue:200.0f/255.0f alpha:1.0f],
-                    [UIColor colorWithRed:255.0f/255.0f green:175.0f/255.0f blue:175.0f/255.0f alpha:1.0f],
+                    [UIColor colorWithRed:000.0f/255.0f green:000.0f/255.0f blue:000.0f/255.0f alpha:1.0f], //off
+                    [UIColor colorWithRed:255.0f/255.0f green:000.0f/255.0f blue:000.0f/255.0f alpha:1.0f], //red
+                    [UIColor colorWithRed:255.5f/255.0f green:127.5f/255.0f blue:000.0f/255.0f alpha:1.0f], //orange
+                    
+                    [UIColor colorWithRed:000.0f/255.0f green:000.0f/255.0f blue:255.0f/255.0f alpha:1.0f], //blue
+                    [UIColor colorWithRed:000.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f], //cyan
+                    [UIColor colorWithRed:000.0f/255.0f green:255.0f/255.0f blue:000.0f/255.0f alpha:1.0f], //green
+                    
+                    [UIColor colorWithRed:127.0f/255.0f green:000.0f/255.0f blue:225.0f/255.0f alpha:1.0f], //purple
+                    [UIColor colorWithRed:255.0f/255.0f green:000.0f/255.0f blue:255.0f/255.0f alpha:1.0f], //magenta
+                    [UIColor colorWithRed:255.0f/255.0f green:127.0f/255.0f blue:225.0f/255.0f alpha:1.0f], //pink
+                    
+                    [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f], //white
+                    [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:127.0f/255.0f alpha:1.0f], //warm white
+                    [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:000.0f/255.0f alpha:1.0f], //yellow
                     nil];
     }
     return __colors;
@@ -32,6 +39,8 @@ static NSArray *__colors = nil;
 
 
 - (void)awakeFromNib {
+    
+    [SSBLEController instance];
     
     _buttonArray = [[NSMutableArray alloc] initWithCapacity:[[SSButtonGridView colors] count]];
     
@@ -46,7 +55,7 @@ static NSArray *__colors = nil;
 
 - (void)layoutSubviews {
     NSInteger btnCount = [[SSButtonGridView colors] count];
-    float columns = sqrt(btnCount);
+    float columns = floor(sqrt(btnCount));
     float rows = ceil(btnCount/columns);
     
     float btnWidth = self.frame.size.width / columns;
@@ -55,14 +64,15 @@ static NSArray *__colors = nil;
     int index = 0;
     for (UIButton *btn in _buttonArray) {
         float x = (index % (int)columns) * btnWidth;
-        float y = floor(index / rows) * btnHeight;
+        float y = floor(index / columns) * btnHeight;
         btn.frame = CGRectMake(x, y, btnWidth, btnHeight);
         index ++;
     }
 }
 
 - (void)buttonPressed:(UIButton*)sender {
-    NSLog([sender.backgroundColor description]);
+    
+    [[SSBLEController instance] sendColor:sender.backgroundColor withSpeed:0x00];
 }
 
 @end

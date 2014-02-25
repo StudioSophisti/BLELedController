@@ -24,6 +24,13 @@
 		B027584018BC8DEC007E3925 /* LedControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B027583F18BC8DEC007E3925 /* LedControllerTests.m */; };
 		B027584A18BC8E14007E3925 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B027584918BC8E14007E3925 /* CoreBluetooth.framework */; };
 		B027584D18BC9135007E3925 /* SSButtonGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = B027584C18BC9135007E3925 /* SSButtonGridView.m */; };
+		B027585F18BC9AE5007E3925 /* CBUUID+StringExtraction.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585318BC9AE5007E3925 /* CBUUID+StringExtraction.m */; };
+		B027586018BC9AE5007E3925 /* LGCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585618BC9AE5007E3925 /* LGCentralManager.m */; };
+		B027586118BC9AE5007E3925 /* LGCharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585818BC9AE5007E3925 /* LGCharacteristic.m */; };
+		B027586218BC9AE5007E3925 /* LGPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585A18BC9AE5007E3925 /* LGPeripheral.m */; };
+		B027586318BC9AE5007E3925 /* LGService.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585C18BC9AE5007E3925 /* LGService.m */; };
+		B027586418BC9AE5007E3925 /* LGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585E18BC9AE5007E3925 /* LGUtils.m */; };
+		B027586718BC9B0B007E3925 /* SSBLEController.m in Sources */ = {isa = PBXBuildFile; fileRef = B027586618BC9B0B007E3925 /* SSBLEController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,21 @@
 		B027584918BC8E14007E3925 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		B027584B18BC9135007E3925 /* SSButtonGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSButtonGridView.h; sourceTree = "<group>"; };
 		B027584C18BC9135007E3925 /* SSButtonGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSButtonGridView.m; sourceTree = "<group>"; };
+		B027585218BC9AE5007E3925 /* CBUUID+StringExtraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBUUID+StringExtraction.h"; sourceTree = "<group>"; };
+		B027585318BC9AE5007E3925 /* CBUUID+StringExtraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBUUID+StringExtraction.m"; sourceTree = "<group>"; };
+		B027585418BC9AE5007E3925 /* LGBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBluetooth.h; sourceTree = "<group>"; };
+		B027585518BC9AE5007E3925 /* LGCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCentralManager.h; sourceTree = "<group>"; };
+		B027585618BC9AE5007E3925 /* LGCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCentralManager.m; sourceTree = "<group>"; };
+		B027585718BC9AE5007E3925 /* LGCharacteristic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCharacteristic.h; sourceTree = "<group>"; };
+		B027585818BC9AE5007E3925 /* LGCharacteristic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCharacteristic.m; sourceTree = "<group>"; };
+		B027585918BC9AE5007E3925 /* LGPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPeripheral.h; sourceTree = "<group>"; };
+		B027585A18BC9AE5007E3925 /* LGPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPeripheral.m; sourceTree = "<group>"; };
+		B027585B18BC9AE5007E3925 /* LGService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGService.h; sourceTree = "<group>"; };
+		B027585C18BC9AE5007E3925 /* LGService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGService.m; sourceTree = "<group>"; };
+		B027585D18BC9AE5007E3925 /* LGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGUtils.h; sourceTree = "<group>"; };
+		B027585E18BC9AE5007E3925 /* LGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGUtils.m; sourceTree = "<group>"; };
+		B027586518BC9B0B007E3925 /* SSBLEController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBLEController.h; sourceTree = "<group>"; };
+		B027586618BC9B0B007E3925 /* SSBLEController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBLEController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,8 +206,32 @@
 		B027585018BC9A65007E3925 /* BLE */ = {
 			isa = PBXGroup;
 			children = (
+				B027585118BC9AE5007E3925 /* LGBluetooth */,
+				B027586518BC9B0B007E3925 /* SSBLEController.h */,
+				B027586618BC9B0B007E3925 /* SSBLEController.m */,
 			);
 			name = BLE;
+			sourceTree = "<group>";
+		};
+		B027585118BC9AE5007E3925 /* LGBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				B027585218BC9AE5007E3925 /* CBUUID+StringExtraction.h */,
+				B027585318BC9AE5007E3925 /* CBUUID+StringExtraction.m */,
+				B027585418BC9AE5007E3925 /* LGBluetooth.h */,
+				B027585518BC9AE5007E3925 /* LGCentralManager.h */,
+				B027585618BC9AE5007E3925 /* LGCentralManager.m */,
+				B027585718BC9AE5007E3925 /* LGCharacteristic.h */,
+				B027585818BC9AE5007E3925 /* LGCharacteristic.m */,
+				B027585918BC9AE5007E3925 /* LGPeripheral.h */,
+				B027585A18BC9AE5007E3925 /* LGPeripheral.m */,
+				B027585B18BC9AE5007E3925 /* LGService.h */,
+				B027585C18BC9AE5007E3925 /* LGService.m */,
+				B027585D18BC9AE5007E3925 /* LGUtils.h */,
+				B027585E18BC9AE5007E3925 /* LGUtils.m */,
+			);
+			name = LGBluetooth;
+			path = LGBluetooth/LGBluetooth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +284,11 @@
 				TargetAttributes = {
 					B027580D18BC8DEB007E3925 = {
 						DevelopmentTeam = BSZZ2WXHJP;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					B027583118BC8DEC007E3925 = {
 						TestTargetID = B027580D18BC8DEB007E3925;
@@ -290,10 +341,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B027586218BC9AE5007E3925 /* LGPeripheral.m in Sources */,
 				B027584D18BC9135007E3925 /* SSButtonGridView.m in Sources */,
+				B027585F18BC9AE5007E3925 /* CBUUID+StringExtraction.m in Sources */,
+				B027586018BC9AE5007E3925 /* LGCentralManager.m in Sources */,
 				B027582B18BC8DEB007E3925 /* SSViewController.m in Sources */,
 				B027582218BC8DEB007E3925 /* SSAppDelegate.m in Sources */,
+				B027586318BC9AE5007E3925 /* LGService.m in Sources */,
+				B027586718BC9B0B007E3925 /* SSBLEController.m in Sources */,
 				B027581E18BC8DEB007E3925 /* main.m in Sources */,
+				B027586418BC9AE5007E3925 /* LGUtils.m in Sources */,
+				B027586118BC9AE5007E3925 /* LGCharacteristic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +572,7 @@
 				B027584518BC8DEC007E3925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B027584618BC8DEC007E3925 /* Build configuration list for PBXNativeTarget "LedControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +581,7 @@
 				B027584818BC8DEC007E3925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

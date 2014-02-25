@@ -7,12 +7,14 @@
 //
 
 #import "SSAppDelegate.h"
+#import "LGBluetooth.h"
 
 @implementation SSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [LGCentralManager sharedInstance];
+    
     return YES;
 }
 							
