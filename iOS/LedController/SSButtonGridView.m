@@ -30,7 +30,7 @@ static NSArray *__colors = nil;
                     [UIColor colorWithRed:255.0f/255.0f green:127.0f/255.0f blue:225.0f/255.0f alpha:1.0f], //pink
                     
                     [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f], //white
-                    [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:127.0f/255.0f alpha:1.0f], //warm white
+                    [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:100.0f/255.0f alpha:1.0f], //warm white
                     [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:000.0f/255.0f alpha:1.0f], //yellow
                     nil];
     }
@@ -47,7 +47,7 @@ static NSArray *__colors = nil;
     for (UIColor *color in [SSButtonGridView colors]) {
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectZero];
         [btn setBackgroundColor:color];
-        [btn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        [btn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchDown];
         [self addSubview:btn];
         [_buttonArray addObject:btn];
     }
@@ -72,7 +72,7 @@ static NSArray *__colors = nil;
 
 - (void)buttonPressed:(UIButton*)sender {
     
-    [[SSBLEController instance] sendColor:sender.backgroundColor withSpeed:0x00];
+    [[SSBLEController instance] sendColor:sender.backgroundColor withSpeed:0xFF];
 }
 
 @end
