@@ -31,6 +31,8 @@
 		B027586318BC9AE5007E3925 /* LGService.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585C18BC9AE5007E3925 /* LGService.m */; };
 		B027586418BC9AE5007E3925 /* LGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585E18BC9AE5007E3925 /* LGUtils.m */; };
 		B027586718BC9B0B007E3925 /* SSBLEController.m in Sources */ = {isa = PBXBuildFile; fileRef = B027586618BC9B0B007E3925 /* SSBLEController.m */; };
+		B027586A18BCEC41007E3925 /* SSColorAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B027586918BCEC41007E3925 /* SSColorAnimator.m */; };
+		B027586D18BD025D007E3925 /* SSAnimationButtonGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = B027586C18BD025D007E3925 /* SSAnimationButtonGridView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,10 @@
 		B027585E18BC9AE5007E3925 /* LGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGUtils.m; sourceTree = "<group>"; };
 		B027586518BC9B0B007E3925 /* SSBLEController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBLEController.h; sourceTree = "<group>"; };
 		B027586618BC9B0B007E3925 /* SSBLEController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBLEController.m; sourceTree = "<group>"; };
+		B027586818BCEC41007E3925 /* SSColorAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSColorAnimator.h; sourceTree = "<group>"; };
+		B027586918BCEC41007E3925 /* SSColorAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSColorAnimator.m; sourceTree = "<group>"; };
+		B027586B18BD025D007E3925 /* SSAnimationButtonGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAnimationButtonGridView.h; sourceTree = "<group>"; };
+		B027586C18BD025D007E3925 /* SSAnimationButtonGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAnimationButtonGridView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +197,10 @@
 				B027582A18BC8DEB007E3925 /* SSViewController.m */,
 				B027584B18BC9135007E3925 /* SSButtonGridView.h */,
 				B027584C18BC9135007E3925 /* SSButtonGridView.m */,
+				B027586B18BD025D007E3925 /* SSAnimationButtonGridView.h */,
+				B027586C18BD025D007E3925 /* SSAnimationButtonGridView.m */,
+				B027586818BCEC41007E3925 /* SSColorAnimator.h */,
+				B027586918BCEC41007E3925 /* SSColorAnimator.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -345,12 +355,14 @@
 				B027584D18BC9135007E3925 /* SSButtonGridView.m in Sources */,
 				B027585F18BC9AE5007E3925 /* CBUUID+StringExtraction.m in Sources */,
 				B027586018BC9AE5007E3925 /* LGCentralManager.m in Sources */,
+				B027586A18BCEC41007E3925 /* SSColorAnimator.m in Sources */,
 				B027582B18BC8DEB007E3925 /* SSViewController.m in Sources */,
 				B027582218BC8DEB007E3925 /* SSAppDelegate.m in Sources */,
 				B027586318BC9AE5007E3925 /* LGService.m in Sources */,
 				B027586718BC9B0B007E3925 /* SSBLEController.m in Sources */,
 				B027581E18BC8DEB007E3925 /* main.m in Sources */,
 				B027586418BC9AE5007E3925 /* LGUtils.m in Sources */,
+				B027586D18BD025D007E3925 /* SSAnimationButtonGridView.m in Sources */,
 				B027586118BC9AE5007E3925 /* LGCharacteristic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

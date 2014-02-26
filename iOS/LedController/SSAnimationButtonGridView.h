@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SSButtonGridView : UIView
-{
-    UIButton *lastButton;
-}
+@class SSColorAnimator;
+
+@interface SSAnimationButtonGridView : UIView
+
+@property (nonatomic, readonly) SSColorAnimator *lastAnimator;
 @property (nonatomic, readonly) NSMutableArray *buttonArray;
 
-+ (NSArray*)colors;
++ (NSArray*)animations;
 
 @end

@@ -17,21 +17,18 @@ static NSArray *__colors = nil;
 + (NSArray*)colors {
     if (!__colors) {
         __colors = [NSArray arrayWithObjects:
-                    [UIColor colorWithRed:000.0f/255.0f green:000.0f/255.0f blue:000.0f/255.0f alpha:1.0f], //off
-                    [UIColor colorWithRed:255.0f/255.0f green:000.0f/255.0f blue:000.0f/255.0f alpha:1.0f], //red
-                    [UIColor colorWithRed:255.5f/255.0f green:127.5f/255.0f blue:000.0f/255.0f alpha:1.0f], //orange
-                    
-                    [UIColor colorWithRed:000.0f/255.0f green:000.0f/255.0f blue:255.0f/255.0f alpha:1.0f], //blue
-                    [UIColor colorWithRed:000.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f], //cyan
-                    [UIColor colorWithRed:000.0f/255.0f green:255.0f/255.0f blue:000.0f/255.0f alpha:1.0f], //green
-                    
-                    [UIColor colorWithRed:127.0f/255.0f green:000.0f/255.0f blue:225.0f/255.0f alpha:1.0f], //purple
-                    [UIColor colorWithRed:255.0f/255.0f green:000.0f/255.0f blue:255.0f/255.0f alpha:1.0f], //magenta
-                    [UIColor colorWithRed:255.0f/255.0f green:127.0f/255.0f blue:225.0f/255.0f alpha:1.0f], //pink
-                    
-                    [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f], //white
-                    [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:100.0f/255.0f alpha:1.0f], //warm white
-                    [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:000.0f/255.0f alpha:1.0f], //yellow
+                    [UIColor colorWithRed:1 green:1 blue:1 alpha:1], //white
+                    [UIColor colorWithRed:1 green:1 blue:0.5 alpha:1], //warm yellow
+                    [UIColor colorWithRed:1 green:1 blue:0 alpha:1], //yellow
+                    [UIColor colorWithRed:1 green:0.5 blue:0 alpha:1], //orange
+                    [UIColor colorWithRed:1 green:0 blue:0 alpha:1], //red
+                    [UIColor colorWithRed:1 green:0 blue:0.5 alpha:1], //pink
+                    [UIColor colorWithRed:0.5 green:0 blue:1 alpha:1], //purple
+                    [UIColor colorWithRed:0 green:0 blue:1 alpha:1], //blue
+                    [UIColor colorWithRed:0 green:1 blue:1 alpha:1], //light blue
+                    [UIColor colorWithRed:0.5 green:1 blue:0 alpha:1], //light green
+                    [UIColor colorWithRed:0 green:1 blue:0 alpha:1], //green
+                    [UIColor colorWithRed:0 green:0 blue:0 alpha:1], //off
                     nil];
     }
     return __colors;
@@ -47,7 +44,8 @@ static NSArray *__colors = nil;
     for (UIColor *color in [SSButtonGridView colors]) {
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectZero];
         [btn setBackgroundColor:color];
-        [btn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchDown];
+        [btn addTarget:self action:@selector(buttonUp:) forControlEvents:UIControlEventTouchUpInside];
+        [btn addTarget:self action:@selector(buttonSlide:) forControlEvents:UIControlEventTouchDragInside];
         [self addSubview:btn];
         [_buttonArray addObject:btn];
     }
@@ -55,7 +53,8 @@ static NSArray *__colors = nil;
 
 - (void)layoutSubviews {
     NSInteger btnCount = [[SSButtonGridView colors] count];
-    float columns = floor(sqrt(btnCount));
+    //float columns = floor(sqrt(btnCount));
+    float columns = 1;
     float rows = ceil(btnCount/columns);
     
     float btnWidth = self.frame.size.width / columns;
@@ -70,9 +69,19 @@ static NSArray *__colors = nil;
     }
 }
 
-- (void)buttonPressed:(UIButton*)sender {
+- (void)buttonUp:(UIButton*)sender {
     
-    [[SSBLEController instance] sendColor:sender.backgroundColor withSpeed:0xFF];
+    if (lastButton != sender)
+        [[SSBLEController instance] sendColor:sender.backgroundColor withSpeed:0xFF];
+    
+    lastButton = nil;
+}
+
+- (void)buttonSlide:(UIButton*)sender {
+    
+    [[SSBLEController instance] sendColor:sender.backgroundColor withSpeed:0x00];
+    
+    lastButton = sender;
 }
 
 @end

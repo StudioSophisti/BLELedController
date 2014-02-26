@@ -17,17 +17,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uin-D9-XsO" customClass="SSButtonGridView">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="384" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsa-xZ-f5G" customClass="SSAnimationButtonGridView">
+                                <rect key="frame" x="384" y="0.0" width="384" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Uin-D9-XsO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IKN-w2-AbC"/>
-                            <constraint firstItem="Uin-D9-XsO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R8u-75-tmO"/>
-                            <constraint firstItem="4F2-6w-4W8" firstAttribute="top" secondItem="Uin-D9-XsO" secondAttribute="bottom" id="xnB-KI-bZg"/>
-                            <constraint firstAttribute="trailing" secondItem="Uin-D9-XsO" secondAttribute="trailing" id="ztQ-Cc-mcJ"/>
+                            <constraint firstItem="Uin-D9-XsO" firstAttribute="width" secondItem="qsa-xZ-f5G" secondAttribute="width" id="2h6-b0-dAh"/>
+                            <constraint firstAttribute="trailing" secondItem="qsa-xZ-f5G" secondAttribute="trailing" id="64y-gR-HYs"/>
+                            <constraint firstItem="4F2-6w-4W8" firstAttribute="top" secondItem="qsa-xZ-f5G" secondAttribute="bottom" id="CQ3-Yg-t9K"/>
+                            <constraint firstItem="Uin-D9-XsO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CZt-Vv-yBC"/>
+                            <constraint firstItem="4F2-6w-4W8" firstAttribute="top" secondItem="Uin-D9-XsO" secondAttribute="bottom" id="FZG-tH-e2K"/>
+                            <constraint firstItem="qsa-xZ-f5G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Gb5-ne-h0H"/>
+                            <constraint firstItem="qsa-xZ-f5G" firstAttribute="leading" secondItem="Uin-D9-XsO" secondAttribute="trailing" id="lq9-mA-qds"/>
+                            <constraint firstItem="Uin-D9-XsO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xYG-NR-rnE"/>
                         </constraints>
                     </view>
                 </viewController>
