@@ -47,8 +47,11 @@ static SSBLEController *__instance = nil;
 
 - (void)sendColor:(UIColor*)color withSpeed:(unsigned char)speed {
     
+    
     CGFloat red, green, blue;
     [color getRed:&red green:&green blue:&blue alpha:NULL];
+    
+    NSLog(@"Setting color %.1f,%.1f,%.1f with speed %d", red, green, blue, speed);
     
     red = red * 255.0f;
     green = green * 255.0f;
@@ -65,7 +68,6 @@ static SSBLEController *__instance = nil;
                 for (LGCharacteristic *charac in service.characteristics) {
                     if ([charac.UUIDString isEqualToString:[ledCharUUID representativeString]]) {
                         [charac writeValue:colorData completion:nil];
-                        NSLog(@"Write complete");
                     }
                 }
             }

@@ -70,6 +70,7 @@
 		B088C6B518BF929D00B07B6F /* water-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C69118BF929D00B07B6F /* water-icon.png */; };
 		B088C6B618BF929D00B07B6F /* water-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C69218BF929D00B07B6F /* water-icon@2x.png */; };
 		B088C6B918BF9CE400B07B6F /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B088C6B818BF9CE400B07B6F /* UIImage+Extensions.m */; };
+		B088C6BC18BFBE3E00B07B6F /* SSColorButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = B088C6BB18BFBE3E00B07B6F /* SSColorButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,8 @@
 		B088C69218BF929D00B07B6F /* water-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "water-icon@2x.png"; sourceTree = "<group>"; };
 		B088C6B718BF9CE400B07B6F /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
 		B088C6B818BF9CE400B07B6F /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		B088C6BA18BFBE3E00B07B6F /* SSColorButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSColorButtonView.h; sourceTree = "<group>"; };
+		B088C6BB18BFBE3E00B07B6F /* SSColorButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSColorButtonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,11 +229,12 @@
 			isa = PBXGroup;
 			children = (
 				B027585018BC9A65007E3925 /* BLE */,
-				B027584F18BC914B007E3925 /* Assets */,
 				B027584E18BC9141007E3925 /* UI */,
 				B027586E18BE1D25007E3925 /* global.h */,
 				B027582018BC8DEB007E3925 /* SSAppDelegate.h */,
 				B027582118BC8DEB007E3925 /* SSAppDelegate.m */,
+				B088C6B718BF9CE400B07B6F /* UIImage+Extensions.h */,
+				B088C6B818BF9CE400B07B6F /* UIImage+Extensions.m */,
 				B027581818BC8DEB007E3925 /* Supporting Files */,
 			);
 			path = LedController;
@@ -278,8 +282,8 @@
 				B027586C18BD025D007E3925 /* SSAnimationButtonGridView.m */,
 				B027586818BCEC41007E3925 /* SSColorAnimator.h */,
 				B027586918BCEC41007E3925 /* SSColorAnimator.m */,
-				B088C6B718BF9CE400B07B6F /* UIImage+Extensions.h */,
-				B088C6B818BF9CE400B07B6F /* UIImage+Extensions.m */,
+				B088C6BA18BFBE3E00B07B6F /* SSColorButtonView.h */,
+				B088C6BB18BFBE3E00B07B6F /* SSColorButtonView.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -296,6 +300,7 @@
 		B027585018BC9A65007E3925 /* BLE */ = {
 			isa = PBXGroup;
 			children = (
+				B027584F18BC914B007E3925 /* Assets */,
 				B027585118BC9AE5007E3925 /* LGBluetooth */,
 				B027586518BC9B0B007E3925 /* SSBLEController.h */,
 				B027586618BC9B0B007E3925 /* SSBLEController.m */,
@@ -519,6 +524,7 @@
 				B027582218BC8DEB007E3925 /* SSAppDelegate.m in Sources */,
 				B027586318BC9AE5007E3925 /* LGService.m in Sources */,
 				B027586718BC9B0B007E3925 /* SSBLEController.m in Sources */,
+				B088C6BC18BFBE3E00B07B6F /* SSColorButtonView.m in Sources */,
 				B088C6B918BF9CE400B07B6F /* UIImage+Extensions.m in Sources */,
 				B027581E18BC8DEB007E3925 /* main.m in Sources */,
 				B027586418BC9AE5007E3925 /* LGUtils.m in Sources */,

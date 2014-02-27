@@ -8,6 +8,7 @@
 
 #import "SSButtonGridView.h"
 #import "SSBLEController.h"
+#import "SSColorButtonView.h"
 
 static NSArray *__colors = nil;
 
@@ -42,10 +43,8 @@ static NSArray *__colors = nil;
     _buttonArray = [[NSMutableArray alloc] initWithCapacity:[[SSButtonGridView colors] count]];
     
     for (UIColor *color in [SSButtonGridView colors]) {
-        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectZero];
+        SSColorButtonView *btn = [[SSColorButtonView alloc] initWithFrame:CGRectZero];
         [btn setBackgroundColor:color];
-        [btn addTarget:self action:@selector(buttonUp:) forControlEvents:UIControlEventTouchUpInside];
-        [btn addTarget:self action:@selector(buttonSlide:) forControlEvents:UIControlEventTouchDragInside];
         [self addSubview:btn];
         [_buttonArray addObject:btn];
     }
@@ -61,27 +60,12 @@ static NSArray *__colors = nil;
     float btnHeight = self.frame.size.height / rows;
     
     int index = 0;
-    for (UIButton *btn in _buttonArray) {
+    for (SSColorButtonView *btn in _buttonArray) {
         float x = (index % (int)columns) * btnWidth;
         float y = floor(index / columns) * btnHeight;
         btn.frame = CGRectMake(x, y, btnWidth, btnHeight);
         index ++;
     }
-}
-
-- (void)buttonUp:(UIButton*)sender {
-    
-    if (lastButton != sender)
-        [[SSBLEController instance] sendColor:sender.backgroundColor withSpeed:0xFF];
-    
-    lastButton = nil;
-}
-
-- (void)buttonSlide:(UIButton*)sender {
-    
-    [[SSBLEController instance] sendColor:sender.backgroundColor withSpeed:0x00];
-    
-    lastButton = sender;
 }
 
 @end
