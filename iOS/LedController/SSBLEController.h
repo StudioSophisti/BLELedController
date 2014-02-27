@@ -9,11 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
+@class SSColorAnimator;
+
 @interface SSBLEController : NSObject
 {    
     CBUUID *ledServiceUUID;
     CBUUID *ledCharUUID;
 }
+
+@property (nonatomic,weak) SSColorAnimator *currentAnimator;
 @property (nonatomic,readonly) NSMutableArray *devices;
 
 + (SSBLEController*)instance;

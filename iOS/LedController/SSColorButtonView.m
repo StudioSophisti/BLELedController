@@ -8,10 +8,13 @@
 
 #import "SSColorButtonView.h"
 #import "SSBLEController.h"
+#import "SSColorAnimator.h"
 
 @implementation SSColorButtonView
 
 - (void)sendColorWithSpeed:(unsigned char)speed {
+    
+    [[SSBLEController instance].currentAnimator stop];
     
     [[SSBLEController instance] sendColor:self.backgroundColor withSpeed:speed];
 }

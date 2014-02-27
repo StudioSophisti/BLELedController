@@ -9,6 +9,7 @@
 #import "SSBLEController.h"
 #import "LGBluetooth.h"
 #import "CBUUID+StringExtraction.h"
+#import "SSColorAnimator.h"
 
 #define LED_SERVICE_UUID       @"3F29121C-FA01-000A-0001-000000000000"
 #define LED_CHAR_UUID          @"3F29121C-FB01-000A-0001-000000000000"
@@ -45,13 +46,20 @@ static SSBLEController *__instance = nil;
     return  self;
 }
 
-- (void)sendColor:(UIColor*)color withSpeed:(unsigned char)speed {
+- (void)setCurrentAnimator:(SSColorAnimator *)currentAnimator {
+    if (_currentAnimator) {
+        [_currentAnimator stop];
+    }
     
+    _currentAnimator = currentAnimator;
+}
+
+- (void)sendColor:(UIColor*)color withSpeed:(unsigned char)speed {
     
     CGFloat red, green, blue;
     [color getRed:&red green:&green blue:&blue alpha:NULL];
     
-    NSLog(@"Setting color %.1f,%.1f,%.1f with speed %d", red, green, blue, speed);
+    NSLog(@"Setting color %.1f %.1f %.1f with speed %d", red, green, blue, speed);
     
     red = red * 255.0f;
     green = green * 255.0f;

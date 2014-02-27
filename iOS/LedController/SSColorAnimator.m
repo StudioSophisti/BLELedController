@@ -20,6 +20,11 @@
 }
 
 - (void)play {
+    
+    NSLog(@"Playing color animation: %@", _animationName);
+    
+    [[SSBLEController instance] setCurrentAnimator:self];
+    
     animationIndex = 0;
     currentLoop = 0;
     isStopped = NO;
@@ -52,10 +57,17 @@
         animationIndex = 0;
         
         [self next];
+        
+    } else {
+        [self stop];
     }
 }
 
 - (void)stop {
+    
+    if (!isStopped)
+        NSLog(@"Stopping color animation: %@", _animationName);
+    
     isStopped = YES;
 }
 
