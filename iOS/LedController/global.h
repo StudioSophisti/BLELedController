@@ -13,6 +13,8 @@
 #define SS_COLOR_WARM_WHITE    [UIColor colorWithRed:1 green:1 blue:0.5 alpha:1]
 #define SS_COLOR_DIM_WHITE     [UIColor colorWithRed:0.1 green:0.1 blue:0.05 alpha:1]
 #define SS_COLOR_YELLOW        [UIColor colorWithRed:1 green:1 blue:0 alpha:1]
+#define SS_COLOR_DIM_YELLOW2   [UIColor colorWithRed:0.5 green:0.5 blue:0 alpha:1]
+#define SS_COLOR_DIM_YELLOW    [UIColor colorWithRed:0.1 green:0.1 blue:0 alpha:1]
 #define SS_COLOR_ORANGE        [UIColor colorWithRed:1 green:0.5 blue:0 alpha:1]
 #define SS_COLOR_DARK_ORANGE   [UIColor colorWithRed:0.75 green:0.25 blue:0 alpha:1]
 #define SS_COLOR_RED           [UIColor colorWithRed:1 green:0 blue:0 alpha:1]

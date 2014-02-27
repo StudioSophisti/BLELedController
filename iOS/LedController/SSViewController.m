@@ -112,51 +112,46 @@ static NSArray *__characters = nil;
     if (!__emotions) {
         __emotions = [NSArray arrayWithObjects:
                       [SSColorAnimator animatorWithSequence: [NSArray arrayWithObjects:
-                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:0.3 max:0.6 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:1.0 max:2.0 speed:0xFF], nil]
-                                                       name:@"anger-icon" loops:2],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.25 max:0.25 speed:0xFF],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:0.16 max:0.16 speed:0xFF],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.25 max:0.25 speed:0xFF],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:0.16 max:0.16 speed:0xFF],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.25 max:0.25 speed:0xFF],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:0.16 max:0.16 speed:0xFF],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.25 max:0.25 speed:0xFF],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:0.16 max:0.16 speed:0xFF], nil]
+                                                       name:@"anger-icon" loops:1],
                       
                       [SSColorAnimator animatorWithSequence: [NSArray arrayWithObjects:
-                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:0.3 max:0.6 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:1.0 max:2.0 speed:0xFF], nil]
+                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.1 speed:0x20],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_GREEN min:0.5 max:0.5 speed:0x05],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.2 max:0.2 speed:0xFF],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_GREEN min:0.1 max:0.1 speed:0xFF],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.2 max:0.2 speed:0xFF],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_GREEN min:0.1 max:0.1 speed:0xFF],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.8 max:0.8 speed:0xFF], nil]
                                                        name:@"fear-icon" loops:2],
                       
                     [SSColorAnimator animatorWithSequence: [NSArray arrayWithObjects:
-                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:0.3 max:0.6 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:1.0 max:2.0 speed:0xFF], nil]
-                                                       name:@"disgust-icon" loops:2],
+                                                                [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.33 max:0.33 speed:0x10],
+                                                                [SSSeqStep stepWithColor:SS_COLOR_GREEN min:0.25 max:0.25 speed:0x10],
+                                                                [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.33 max:0.33 speed:0x10],
+                                                                [SSSeqStep stepWithColor:SS_COLOR_PURPLE min:0.25 max:0.25 speed:0x10],
+                                                                [SSSeqStep stepWithColor:SS_COLOR_OFF min:1 max:1 speed:0xFF], nil]
+                                                       name:@"disgust-icon" loops:1],
                       
                       [SSColorAnimator animatorWithSequence: [NSArray arrayWithObjects:
-                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:0.3 max:0.6 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.2 speed:0xFF],
-                                                              [SSSeqStep stepWithColor:SS_COLOR_RED min:1.0 max:2.0 speed:0xFF], nil]
-                                                       name:@"happy-icon" loops:2],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.4 max:0.4 speed:0x10],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_DIM_YELLOW min:0.75 max:0.75 speed:0x08],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_DIM_YELLOW2 min:0.5 max:0.5 speed:0x10],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_YELLOW min:0.25 max:0.25 speed:0x20], nil]
+                                                       name:@"happy-icon" loops:1],
                      
-                     [SSColorAnimator animatorWithSequence: [NSArray arrayWithObjects:
-                                                             [SSSeqStep stepWithColor:SS_COLOR_PURPLE min:0.1 max:0.1 speed:0xFF],
-                                                             [SSSeqStep stepWithColor:SS_COLOR_RED min:0.1 max:0.1 speed:0xFF],
-                                                             [SSSeqStep stepWithColor:SS_COLOR_PINK min:0.1 max:0.1 speed:0xFF],
-                                                             [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.1 max:0.1 speed:0xFF],
-                                                             [SSSeqStep stepWithColor:SS_COLOR_RED min:0.1 max:0.1 speed:0xFF],
-                                                             [SSSeqStep stepWithColor:SS_COLOR_PINK min:0.1 max:0.1 speed:0xFF],
-                                                             [SSSeqStep stepWithColor:SS_COLOR_PURPLE min:0.1 max:0.1 speed:0xFF],
-                                                             [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.5 max:0.5 speed:0xFF], nil]
-                                                      name:@"sadness-icon" loops:2],
+                      [SSColorAnimator animatorWithSequence: [NSArray arrayWithObjects:
+                                                              [SSSeqStep stepWithColor:SS_COLOR_LIGHT_BLUE min:0.4 max:0.4 speed:0x10],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_BLUE min:2 max:2 speed:0x01],
+                                                              [SSSeqStep stepWithColor:SS_COLOR_OFF min:2 max:2 speed:0x01], nil]
+                                                      name:@"sadness-icon" loops:1],
                       
                       [SSColorAnimator animatorWithSequence: [NSArray arrayWithObjects:
                                                               [SSSeqStep stepWithColor:SS_COLOR_PURPLE min:0.1 max:0.1 speed:0xFF],
@@ -167,7 +162,7 @@ static NSArray *__characters = nil;
                                                               [SSSeqStep stepWithColor:SS_COLOR_PINK min:0.1 max:0.1 speed:0xFF],
                                                               [SSSeqStep stepWithColor:SS_COLOR_PURPLE min:0.1 max:0.1 speed:0xFF],
                                                               [SSSeqStep stepWithColor:SS_COLOR_OFF min:0.5 max:0.5 speed:0xFF], nil]
-                                                       name:@"surprice-icon" loops:2],
+                                                       name:@"surprice-icon" loops:1],
                      
                      nil];
     }
