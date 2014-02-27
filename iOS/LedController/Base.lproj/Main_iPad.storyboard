@@ -17,28 +17,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uin-D9-XsO" customClass="SSButtonGridView">
-                                <rect key="frame" x="0.0" y="0.0" width="384" height="1024"/>
+                                <rect key="frame" x="514" y="48" width="210" height="932"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsa-xZ-f5G" customClass="SSAnimationButtonGridView">
-                                <rect key="frame" x="384" y="0.0" width="384" height="1024"/>
+                                <rect key="frame" x="44" y="44" width="426" height="426"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="426" id="70z-0t-45i"/>
+                                    <constraint firstAttribute="width" constant="426" id="wOE-be-G2O"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFJ-Sb-Ygu" customClass="SSAnimationButtonGridView">
+                                <rect key="frame" x="44" y="510" width="426" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="284" id="9lV-cx-cba"/>
+                                    <constraint firstAttribute="width" constant="426" id="qxU-aY-J2X"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Da-Gr-K52" customClass="SSAnimationButtonGridView">
+                                <rect key="frame" x="44" y="834" width="426" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="0pa-0N-ISq"/>
+                                    <constraint firstAttribute="width" constant="426" id="Ghk-XS-5Hf"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Uin-D9-XsO" firstAttribute="width" secondItem="qsa-xZ-f5G" secondAttribute="width" id="2h6-b0-dAh"/>
-                            <constraint firstAttribute="trailing" secondItem="qsa-xZ-f5G" secondAttribute="trailing" id="64y-gR-HYs"/>
-                            <constraint firstItem="4F2-6w-4W8" firstAttribute="top" secondItem="qsa-xZ-f5G" secondAttribute="bottom" id="CQ3-Yg-t9K"/>
-                            <constraint firstItem="Uin-D9-XsO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CZt-Vv-yBC"/>
-                            <constraint firstItem="4F2-6w-4W8" firstAttribute="top" secondItem="Uin-D9-XsO" secondAttribute="bottom" id="FZG-tH-e2K"/>
-                            <constraint firstItem="qsa-xZ-f5G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Gb5-ne-h0H"/>
-                            <constraint firstItem="qsa-xZ-f5G" firstAttribute="leading" secondItem="Uin-D9-XsO" secondAttribute="trailing" id="lq9-mA-qds"/>
-                            <constraint firstItem="Uin-D9-XsO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xYG-NR-rnE"/>
+                            <constraint firstAttribute="trailing" secondItem="Uin-D9-XsO" secondAttribute="trailing" constant="44" id="7Vs-HQ-kmH"/>
+                            <constraint firstItem="FFJ-Sb-Ygu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="44" id="Eng-wW-1wK"/>
+                            <constraint firstItem="qsa-xZ-f5G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="JQd-z0-Cs0"/>
+                            <constraint firstItem="4F2-6w-4W8" firstAttribute="top" secondItem="Uin-D9-XsO" secondAttribute="bottom" constant="44" id="R5Z-6R-4MY"/>
+                            <constraint firstItem="3Da-Gr-K52" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="44" id="a7R-f6-Ixp"/>
+                            <constraint firstItem="FFJ-Sb-Ygu" firstAttribute="top" secondItem="qsa-xZ-f5G" secondAttribute="bottom" constant="40" id="bC6-qC-hQG"/>
+                            <constraint firstItem="Uin-D9-XsO" firstAttribute="leading" secondItem="qsa-xZ-f5G" secondAttribute="trailing" constant="44" id="ceM-cL-y3b"/>
+                            <constraint firstItem="qsa-xZ-f5G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="44" id="ivr-ys-9kD"/>
+                            <constraint firstItem="3Da-Gr-K52" firstAttribute="top" secondItem="FFJ-Sb-Ygu" secondAttribute="bottom" constant="40" id="oea-Pc-br9"/>
+                            <constraint firstItem="Uin-D9-XsO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="48" id="xSk-Az-2lG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="characterAnimationGrid" destination="3Da-Gr-K52" id="5A2-Fh-a3f"/>
+                        <outlet property="colorGrid" destination="Uin-D9-XsO" id="IPG-es-Vsy"/>
+                        <outlet property="effectAnimationGrid" destination="qsa-xZ-f5G" id="HZI-3u-L82"/>
+                        <outlet property="emotionAnimationGrid" destination="FFJ-Sb-Ygu" id="7d1-K6-rZL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

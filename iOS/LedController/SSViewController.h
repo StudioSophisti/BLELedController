@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SSViewController : UIViewController
+@class SSAnimationButtonGridView;
+@class SSButtonGridView;
 
+@interface SSViewController : UIViewController
+{
+    IBOutlet SSAnimationButtonGridView *effectAnimationGrid;
+    IBOutlet SSAnimationButtonGridView *emotionAnimationGrid;
+    IBOutlet SSAnimationButtonGridView *characterAnimationGrid;
+    IBOutlet SSButtonGridView *colorGrid;
+}
 @end

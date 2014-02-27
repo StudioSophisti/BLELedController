@@ -12,9 +12,8 @@
 
 @interface SSAnimationButtonGridView : UIView
 
+@property (nonatomic, strong) NSArray *animations;
 @property (nonatomic, readonly) SSColorAnimator *lastAnimator;
 @property (nonatomic, readonly) NSMutableArray *buttonArray;
-
-+ (NSArray*)animations;
 
 @end

@@ -47,9 +47,10 @@
         [self performSelector:@selector(next) withObject:nil afterDelay:time];
         
         
-    } else if (animationIndex >= [_sequence count] && currentLoop < _loopCount) {
+    } else if (animationIndex >= [_sequence count] && currentLoop < _loopCount-1) {
         currentLoop++;
         animationIndex = 0;
+        
         [self next];
     }
 }

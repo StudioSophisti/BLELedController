@@ -31,7 +31,7 @@ static SSBLEController *__instance = nil;
 
 - (id)init {
     if ((self = [super init])) {
-        _devices = [[NSMutableArray alloc] initWithCapacity:10];
+        _devices = [[NSMutableArray alloc] initWithCapacity:20];
             
         ledServiceUUID = [CBUUID UUIDWithString:LED_SERVICE_UUID];
         ledCharUUID = [CBUUID UUIDWithString:LED_CHAR_UUID];
@@ -83,17 +83,24 @@ static SSBLEController *__instance = nil;
     
     NSArray	*uuidArray = [NSArray arrayWithObjects:ledServiceUUID, nil];
     
-    [[LGCentralManager sharedInstance] scanForPeripheralsByInterval:3
-                                                           services:uuidArray
-                                                            options:nil
-                                                         completion:^(NSArray *peripherals) {
-                                                             for (LGPeripheral *peripheral in peripherals) {
-                                                                 [self connectAndDiscoverPeripheral:peripheral];
+    if ([LGCentralManager sharedInstance].isCentralReady) {
+        [[LGCentralManager sharedInstance] scanForPeripheralsByInterval:3
+                                                               services:uuidArray
+                                                                options:nil
+                                                             completion:^(NSArray *peripherals) {
+                                                                 for (LGPeripheral *peripheral in peripherals) {
+                                                                     [self connectAndDiscoverPeripheral:peripheral];
+                                                                 }
+                                                                 [self performSelector:@selector(startScanning) withObject:nil afterDelay:1.0f];
+                                                                 
                                                              }
-                                                             [self performSelector:@selector(startScanning) withObject:nil afterDelay:1.0f];
-                                                             
-                                                         }
-     ];
+         ];
+    } else {
+        
+        [self performSelector:@selector(startScanning) withObject:nil afterDelay:3.0f];
+    }
+    
+    
 }
 
 - (void)connectAndDiscoverPeripheral:(LGPeripheral *)peripheral {
@@ -101,7 +108,7 @@ static SSBLEController *__instance = nil;
     NSArray	*uuidArray = [NSArray arrayWithObjects:ledServiceUUID, nil];
     
     // First of all, opening connection
-    [peripheral connectWithTimeout:5
+    [peripheral connectWithTimeout:10
                         completion:^(NSError *error) {
      
         // Discovering services of peripheral

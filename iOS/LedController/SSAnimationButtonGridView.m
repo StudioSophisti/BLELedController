@@ -9,49 +9,30 @@
 #import "SSAnimationButtonGridView.h"
 #import "SSBLEController.h"
 #import "SSColorAnimator.h"
-
-static NSArray *__animations = nil;
+#import "UIImage+Extensions.h"
 
 @implementation SSAnimationButtonGridView
 
-+ (NSArray*)animations {
-    if (!__animations) {
-        __animations = [NSArray arrayWithObjects:
-                        
-                        [SSColorAnimator animatorWithSequence: [NSArray arrayWithObjects:
-                                                                [SSSeqStep stepWithColor:[UIColor redColor] min:0.2 max:0.2 speed:0xFF],
-                                                                [SSSeqStep stepWithColor:[UIColor orangeColor] min:0.1 max:0.4 speed:0xFF],
-                                                                [SSSeqStep stepWithColor:[UIColor redColor] min:0.2 max:0.2 speed:0xFF],
-                                                                [SSSeqStep stepWithColor:[UIColor orangeColor] min:1.0 max:2.0 speed:0xFF], nil]
-                                                         name:@"lighting" loops:HUGE_VAL],
-                        
-                        
-                        [SSColorAnimator animatorWithSequence: [NSArray arrayWithObjects:
-                                                                [SSSeqStep stepWithColor:[UIColor whiteColor] min:0.2 max:0.2 speed:0xFF],
-                                                                [SSSeqStep stepWithColor:[UIColor whiteColor] min:0.2 max:0.2 speed:0xFF], nil]
-                                                         name:@"fire" loops:HUGE_VAL],
-                        
-                        
-                        [SSColorAnimator animatorWithSequence: [NSArray arrayWithObjects:
-                                                                [SSSeqStep stepWithColor:[UIColor whiteColor] min:0.2 max:0.2 speed:0xFF],
-                                                                [SSSeqStep stepWithColor:[UIColor whiteColor] min:0.2 max:0.2 speed:0xFF], nil]
-                                                         name:@"water" loops:HUGE_VAL],
-                        
-                    nil];
-    }
-    return __animations;
-}
-
-
-- (void)awakeFromNib {
+- (void)setAnimations:(NSArray *)animations {
+    
+    _animations = animations;
     
     [SSBLEController instance];
     
-    _buttonArray = [[NSMutableArray alloc] initWithCapacity:[[SSAnimationButtonGridView animations] count]];
+    _buttonArray = [[NSMutableArray alloc] initWithCapacity:[animations count]];
     
-    for (SSColorAnimator *ani in [SSAnimationButtonGridView animations]) {
-        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectZero];
-        [btn setTitle:ani.animationName forState:UIControlStateNormal];
+    for (SSColorAnimator *ani in animations) {
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.backgroundColor = [UIColor whiteColor];
+        btn.titleLabel.font = [UIFont boldSystemFontOfSize:24];
+        btn.contentMode = UIViewContentModeScaleAspectFit;
+        
+        if (IS_IPAD) {
+             [btn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", ani.animationName]] forState:UIControlStateNormal];
+        } else {
+             [btn setImage:[[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", ani.animationName]] imageByScalingProportionallyToSize:CGSizeMake(67, 67)] forState:UIControlStateNormal];
+        }
+       
         [btn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchDown];
         [self addSubview:btn];
         [_buttonArray addObject:btn];
@@ -59,8 +40,9 @@ static NSArray *__animations = nil;
 }
 
 - (void)layoutSubviews {
-    NSInteger btnCount = [[SSAnimationButtonGridView animations] count];
-    float columns = floor(sqrt(btnCount));
+    NSInteger btnCount = [_animations count];
+    //float columns = floor(sqrt(btnCount));
+    float columns = 3;
     float rows = ceil(btnCount/columns);
     
     float btnWidth = self.frame.size.width / columns;
@@ -77,7 +59,7 @@ static NSArray *__animations = nil;
 
 - (void)buttonPressed:(UIButton*)sender {
     
-    SSColorAnimator *ani = [[SSAnimationButtonGridView animations] objectAtIndex:[_buttonArray indexOfObject:sender]];
+    SSColorAnimator *ani = [_animations objectAtIndex:[_buttonArray indexOfObject:sender]];
     
     if (_lastAnimator) [_lastAnimator stop];
     _lastAnimator = ani;

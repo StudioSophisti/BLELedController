@@ -17,18 +17,18 @@ static NSArray *__colors = nil;
 + (NSArray*)colors {
     if (!__colors) {
         __colors = [NSArray arrayWithObjects:
-                    [UIColor colorWithRed:1 green:1 blue:1 alpha:1], //white
-                    [UIColor colorWithRed:1 green:1 blue:0.5 alpha:1], //warm yellow
-                    [UIColor colorWithRed:1 green:1 blue:0 alpha:1], //yellow
-                    [UIColor colorWithRed:1 green:0.5 blue:0 alpha:1], //orange
-                    [UIColor colorWithRed:1 green:0 blue:0 alpha:1], //red
-                    [UIColor colorWithRed:1 green:0 blue:0.5 alpha:1], //pink
-                    [UIColor colorWithRed:0.5 green:0 blue:1 alpha:1], //purple
-                    [UIColor colorWithRed:0 green:0 blue:1 alpha:1], //blue
-                    [UIColor colorWithRed:0 green:1 blue:1 alpha:1], //light blue
-                    [UIColor colorWithRed:0.5 green:1 blue:0 alpha:1], //light green
-                    [UIColor colorWithRed:0 green:1 blue:0 alpha:1], //green
-                    [UIColor colorWithRed:0 green:0 blue:0 alpha:1], //off
+                    SS_COLOR_WHITE,
+                    SS_COLOR_WARM_WHITE,
+                    SS_COLOR_YELLOW,
+                    SS_COLOR_ORANGE,
+                    SS_COLOR_RED,
+                    SS_COLOR_PINK,
+                    SS_COLOR_PURPLE,
+                    SS_COLOR_BLUE,
+                    SS_COLOR_LIGHT_BLUE,
+                    SS_COLOR_LIGHT_GREEN,
+                    SS_COLOR_GREEN,
+                    SS_COLOR_OFF,
                     nil];
     }
     return __colors;
