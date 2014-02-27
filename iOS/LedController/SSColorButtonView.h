@@ -11,5 +11,7 @@
 @interface SSColorButtonView : UIView
 {
     CGPoint touchPointStart;
+    
+    UIView *overlayView;
 }
 @end
