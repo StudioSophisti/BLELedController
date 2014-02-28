@@ -84,14 +84,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B027580E18BC8DEB007E3925 /* LedController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B027580E18BC8DEB007E3925 /* LedRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B027581118BC8DEB007E3925 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B027581318BC8DEB007E3925 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B027581518BC8DEB007E3925 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B027581918BC8DEB007E3925 /* LedController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LedController-Info.plist"; sourceTree = "<group>"; };
+		B027581918BC8DEB007E3925 /* LedRemote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LedRemote-Info.plist"; sourceTree = "<group>"; };
 		B027581B18BC8DEB007E3925 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B027581D18BC8DEB007E3925 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B027581F18BC8DEB007E3925 /* LedController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LedController-Prefix.pch"; sourceTree = "<group>"; };
+		B027581F18BC8DEB007E3925 /* LedRemote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LedRemote-Prefix.pch"; sourceTree = "<group>"; };
 		B027582018BC8DEB007E3925 /* SSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppDelegate.h; sourceTree = "<group>"; };
 		B027582118BC8DEB007E3925 /* SSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAppDelegate.m; sourceTree = "<group>"; };
 		B027582418BC8DEB007E3925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -99,9 +99,9 @@
 		B027582918BC8DEB007E3925 /* SSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSViewController.h; sourceTree = "<group>"; };
 		B027582A18BC8DEB007E3925 /* SSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSViewController.m; sourceTree = "<group>"; };
 		B027582C18BC8DEB007E3925 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B027583218BC8DEC007E3925 /* LedControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LedControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B027583218BC8DEC007E3925 /* LedRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LedRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B027583318BC8DEC007E3925 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B027583B18BC8DEC007E3925 /* LedControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LedControllerTests-Info.plist"; sourceTree = "<group>"; };
+		B027583B18BC8DEC007E3925 /* LedRemoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LedRemoteTests-Info.plist"; sourceTree = "<group>"; };
 		B027583D18BC8DEC007E3925 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B027583F18BC8DEC007E3925 /* LedControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedControllerTests.m; sourceTree = "<group>"; };
 		B027584918BC8E14007E3925 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -207,8 +207,8 @@
 		B027580F18BC8DEB007E3925 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B027580E18BC8DEB007E3925 /* LedController.app */,
-				B027583218BC8DEC007E3925 /* LedControllerTests.xctest */,
+				B027580E18BC8DEB007E3925 /* LedRemote.app */,
+				B027583218BC8DEC007E3925 /* LedRemoteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,10 +243,10 @@
 		B027581818BC8DEB007E3925 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B027581918BC8DEB007E3925 /* LedController-Info.plist */,
+				B027581918BC8DEB007E3925 /* LedRemote-Info.plist */,
 				B027581A18BC8DEB007E3925 /* InfoPlist.strings */,
 				B027581D18BC8DEB007E3925 /* main.m */,
-				B027581F18BC8DEB007E3925 /* LedController-Prefix.pch */,
+				B027581F18BC8DEB007E3925 /* LedRemote-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 		B027583A18BC8DEC007E3925 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B027583B18BC8DEC007E3925 /* LedControllerTests-Info.plist */,
+				B027583B18BC8DEC007E3925 /* LedRemoteTests-Info.plist */,
 				B027583C18BC8DEC007E3925 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -375,9 +375,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B027580D18BC8DEB007E3925 /* LedController */ = {
+		B027580D18BC8DEB007E3925 /* LedRemote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B027584318BC8DEC007E3925 /* Build configuration list for PBXNativeTarget "LedController" */;
+			buildConfigurationList = B027584318BC8DEC007E3925 /* Build configuration list for PBXNativeTarget "LedRemote" */;
 			buildPhases = (
 				B027580A18BC8DEB007E3925 /* Sources */,
 				B027580B18BC8DEB007E3925 /* Frameworks */,
@@ -387,14 +387,14 @@
 			);
 			dependencies = (
 			);
-			name = LedController;
+			name = LedRemote;
 			productName = LedController;
-			productReference = B027580E18BC8DEB007E3925 /* LedController.app */;
+			productReference = B027580E18BC8DEB007E3925 /* LedRemote.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B027583118BC8DEC007E3925 /* LedControllerTests */ = {
+		B027583118BC8DEC007E3925 /* LedRemoteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B027584618BC8DEC007E3925 /* Build configuration list for PBXNativeTarget "LedControllerTests" */;
+			buildConfigurationList = B027584618BC8DEC007E3925 /* Build configuration list for PBXNativeTarget "LedRemoteTests" */;
 			buildPhases = (
 				B027582E18BC8DEC007E3925 /* Sources */,
 				B027582F18BC8DEC007E3925 /* Frameworks */,
@@ -405,9 +405,9 @@
 			dependencies = (
 				B027583818BC8DEC007E3925 /* PBXTargetDependency */,
 			);
-			name = LedControllerTests;
+			name = LedRemoteTests;
 			productName = LedControllerTests;
-			productReference = B027583218BC8DEC007E3925 /* LedControllerTests.xctest */;
+			productReference = B027583218BC8DEC007E3925 /* LedRemoteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -433,7 +433,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B027580918BC8DEB007E3925 /* Build configuration list for PBXProject "LedController" */;
+			buildConfigurationList = B027580918BC8DEB007E3925 /* Build configuration list for PBXProject "LedRemote" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -446,8 +446,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B027580D18BC8DEB007E3925 /* LedController */,
-				B027583118BC8DEC007E3925 /* LedControllerTests */,
+				B027580D18BC8DEB007E3925 /* LedRemote */,
+				B027583118BC8DEC007E3925 /* LedRemoteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -546,7 +546,7 @@
 /* Begin PBXTargetDependency section */
 		B027583818BC8DEC007E3925 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B027580D18BC8DEB007E3925 /* LedController */;
+			target = B027580D18BC8DEB007E3925 /* LedRemote */;
 			targetProxy = B027583718BC8DEC007E3925 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -668,9 +668,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LedController/LedController-Prefix.pch";
-				INFOPLIST_FILE = "LedController/LedController-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "LedController/LedRemote-Prefix.pch";
+				INFOPLIST_FILE = "LedController/LedRemote-Info.plist";
+				PRODUCT_NAME = LedRemote;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -682,9 +682,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LedController/LedController-Prefix.pch";
-				INFOPLIST_FILE = "LedController/LedController-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "LedController/LedRemote-Prefix.pch";
+				INFOPLIST_FILE = "LedController/LedRemote-Info.plist";
+				PRODUCT_NAME = LedRemote;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -705,8 +705,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "LedControllerTests/LedControllerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "LedControllerTests/LedRemoteTests-Info.plist";
+				PRODUCT_NAME = LedRemoteTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -724,8 +724,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LedController/LedController-Prefix.pch";
-				INFOPLIST_FILE = "LedControllerTests/LedControllerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "LedControllerTests/LedRemoteTests-Info.plist";
+				PRODUCT_NAME = LedRemoteTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -734,7 +734,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B027580918BC8DEB007E3925 /* Build configuration list for PBXProject "LedController" */ = {
+		B027580918BC8DEB007E3925 /* Build configuration list for PBXProject "LedRemote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B027584118BC8DEC007E3925 /* Debug */,
@@ -743,7 +743,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B027584318BC8DEC007E3925 /* Build configuration list for PBXNativeTarget "LedController" */ = {
+		B027584318BC8DEC007E3925 /* Build configuration list for PBXNativeTarget "LedRemote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B027584418BC8DEC007E3925 /* Debug */,
@@ -752,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B027584618BC8DEC007E3925 /* Build configuration list for PBXNativeTarget "LedControllerTests" */ = {
+		B027584618BC8DEC007E3925 /* Build configuration list for PBXNativeTarget "LedRemoteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B027584718BC8DEC007E3925 /* Debug */,
