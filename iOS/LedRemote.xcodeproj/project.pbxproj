@@ -71,6 +71,71 @@
 		B088C6B618BF929D00B07B6F /* water-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C69218BF929D00B07B6F /* water-icon@2x.png */; };
 		B088C6B918BF9CE400B07B6F /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B088C6B818BF9CE400B07B6F /* UIImage+Extensions.m */; };
 		B088C6BC18BFBE3E00B07B6F /* SSColorButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = B088C6BB18BFBE3E00B07B6F /* SSColorButtonView.m */; };
+		B0FB1C2418C1C80600D19094 /* LGPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585A18BC9AE5007E3925 /* LGPeripheral.m */; };
+		B0FB1C2518C1C80600D19094 /* SSButtonGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = B027584C18BC9135007E3925 /* SSButtonGridView.m */; };
+		B0FB1C2618C1C80600D19094 /* CBUUID+StringExtraction.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585318BC9AE5007E3925 /* CBUUID+StringExtraction.m */; };
+		B0FB1C2718C1C80600D19094 /* LGCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585618BC9AE5007E3925 /* LGCentralManager.m */; };
+		B0FB1C2818C1C80600D19094 /* SSColorAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B027586918BCEC41007E3925 /* SSColorAnimator.m */; };
+		B0FB1C2918C1C80600D19094 /* SSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B027582A18BC8DEB007E3925 /* SSViewController.m */; };
+		B0FB1C2A18C1C80600D19094 /* SSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B027582118BC8DEB007E3925 /* SSAppDelegate.m */; };
+		B0FB1C2B18C1C80600D19094 /* LGService.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585C18BC9AE5007E3925 /* LGService.m */; };
+		B0FB1C2C18C1C80600D19094 /* SSBLEController.m in Sources */ = {isa = PBXBuildFile; fileRef = B027586618BC9B0B007E3925 /* SSBLEController.m */; };
+		B0FB1C2D18C1C80600D19094 /* SSColorButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = B088C6BB18BFBE3E00B07B6F /* SSColorButtonView.m */; };
+		B0FB1C2E18C1C80600D19094 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B088C6B818BF9CE400B07B6F /* UIImage+Extensions.m */; };
+		B0FB1C2F18C1C80600D19094 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B027581D18BC8DEB007E3925 /* main.m */; };
+		B0FB1C3018C1C80600D19094 /* LGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585E18BC9AE5007E3925 /* LGUtils.m */; };
+		B0FB1C3118C1C80600D19094 /* SSAnimationButtonGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = B027586C18BD025D007E3925 /* SSAnimationButtonGridView.m */; };
+		B0FB1C3218C1C80600D19094 /* LGCharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = B027585818BC9AE5007E3925 /* LGCharacteristic.m */; };
+		B0FB1C3418C1C80600D19094 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B027584918BC8E14007E3925 /* CoreBluetooth.framework */; };
+		B0FB1C3518C1C80600D19094 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B027581318BC8DEB007E3925 /* CoreGraphics.framework */; };
+		B0FB1C3618C1C80600D19094 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B027581518BC8DEB007E3925 /* UIKit.framework */; };
+		B0FB1C3718C1C80600D19094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B027581118BC8DEB007E3925 /* Foundation.framework */; };
+		B0FB1C3918C1C80600D19094 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B027582618BC8DEB007E3925 /* Main_iPad.storyboard */; };
+		B0FB1C3A18C1C80600D19094 /* fire-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68018BF929D00B07B6F /* fire-icon@2x.png */; };
+		B0FB1C3B18C1C80600D19094 /* fear-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67D18BF929D00B07B6F /* fear-icon.png */; };
+		B0FB1C3C18C1C80600D19094 /* disco-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67718BF929D00B07B6F /* disco-icon.png */; };
+		B0FB1C3D18C1C80600D19094 /* hearth-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68318BF929D00B07B6F /* hearth-icon.png */; };
+		B0FB1C3E18C1C80600D19094 /* sadness-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68C18BF929D00B07B6F /* sadness-icon@2x.png */; };
+		B0FB1C3F18C1C80600D19094 /* surprice-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68F18BF929D00B07B6F /* surprice-icon.png */; };
+		B0FB1C4018C1C80600D19094 /* magic-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68A18BF929D00B07B6F /* magic-icon@2x.png */; };
+		B0FB1C4118C1C80600D19094 /* fire-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67F18BF929D00B07B6F /* fire-icon.png */; };
+		B0FB1C4218C1C80600D19094 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B027582C18BC8DEB007E3925 /* Images.xcassets */; };
+		B0FB1C4318C1C80600D19094 /* explosion-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67C18BF929D00B07B6F /* explosion-icon@2x.png */; };
+		B0FB1C4418C1C80600D19094 /* hearthbeat-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68518BF929D00B07B6F /* hearthbeat-icon.png */; };
+		B0FB1C4518C1C80600D19094 /* sunrise-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68E18BF929D00B07B6F /* sunrise-icon@2x.png */; };
+		B0FB1C4618C1C80600D19094 /* anger-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67518BF929D00B07B6F /* anger-icon.png */; };
+		B0FB1C4718C1C80600D19094 /* happy-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68118BF929D00B07B6F /* happy-icon.png */; };
+		B0FB1C4818C1C80600D19094 /* 3-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67318BF929D00B07B6F /* 3-icon.png */; };
+		B0FB1C4918C1C80600D19094 /* 3-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67418BF929D00B07B6F /* 3-icon@2x.png */; };
+		B0FB1C4A18C1C80600D19094 /* hearthbeat-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68618BF929D00B07B6F /* hearthbeat-icon@2x.png */; };
+		B0FB1C4B18C1C80600D19094 /* sunrise-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68D18BF929D00B07B6F /* sunrise-icon.png */; };
+		B0FB1C4C18C1C80600D19094 /* 2-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67218BF929D00B07B6F /* 2-icon@2x.png */; };
+		B0FB1C4D18C1C80600D19094 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B027582318BC8DEB007E3925 /* Main_iPhone.storyboard */; };
+		B0FB1C4E18C1C80600D19094 /* disco-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67818BF929D00B07B6F /* disco-icon@2x.png */; };
+		B0FB1C4F18C1C80600D19094 /* disgust-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67A18BF929D00B07B6F /* disgust-icon@2x.png */; };
+		B0FB1C5018C1C80600D19094 /* magic-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68918BF929D00B07B6F /* magic-icon.png */; };
+		B0FB1C5118C1C80600D19094 /* explosion-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67B18BF929D00B07B6F /* explosion-icon.png */; };
+		B0FB1C5218C1C80600D19094 /* fear-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67E18BF929D00B07B6F /* fear-icon@2x.png */; };
+		B0FB1C5318C1C80600D19094 /* 1-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C66F18BF929D00B07B6F /* 1-icon.png */; };
+		B0FB1C5418C1C80600D19094 /* sadness-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68B18BF929D00B07B6F /* sadness-icon.png */; };
+		B0FB1C5518C1C80600D19094 /* surprice-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C69018BF929D00B07B6F /* surprice-icon@2x.png */; };
+		B0FB1C5618C1C80600D19094 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B027581A18BC8DEB007E3925 /* InfoPlist.strings */; };
+		B0FB1C5718C1C80600D19094 /* anger-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67618BF929D00B07B6F /* anger-icon@2x.png */; };
+		B0FB1C5818C1C80600D19094 /* disgust-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67918BF929D00B07B6F /* disgust-icon.png */; };
+		B0FB1C5918C1C80600D19094 /* lightning-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68818BF929D00B07B6F /* lightning-icon@2x.png */; };
+		B0FB1C5A18C1C80600D19094 /* 1-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67018BF929D00B07B6F /* 1-icon@2x.png */; };
+		B0FB1C5B18C1C80600D19094 /* water-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C69118BF929D00B07B6F /* water-icon.png */; };
+		B0FB1C5C18C1C80600D19094 /* hearth-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68418BF929D00B07B6F /* hearth-icon@2x.png */; };
+		B0FB1C5D18C1C80600D19094 /* lightning-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68718BF929D00B07B6F /* lightning-icon.png */; };
+		B0FB1C5E18C1C80600D19094 /* happy-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C68218BF929D00B07B6F /* happy-icon@2x.png */; };
+		B0FB1C5F18C1C80600D19094 /* 2-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C67118BF929D00B07B6F /* 2-icon.png */; };
+		B0FB1C6018C1C80600D19094 /* water-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088C69218BF929D00B07B6F /* water-icon@2x.png */; };
+		B0FB1C6718C1C87F00D19094 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FB1C6618C1C87F00D19094 /* AVFoundation.framework */; };
+		B0FB1C6918C1C88500D19094 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FB1C6818C1C88500D19094 /* CoreAudio.framework */; };
+		B0FB1C6D18C1C90C00D19094 /* Audio_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FB1C6C18C1C90B00D19094 /* Audio_iPad.storyboard */; };
+		B0FB1C6E18C1C91400D19094 /* Audio_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FB1C6A18C1C8E900D19094 /* Audio_iPhone.storyboard */; };
+		B0FB1C7118C1C93A00D19094 /* SSAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FB1C7018C1C93A00D19094 /* SSAudioViewController.m */; };
+		B0FB1C7418C1C97A00D19094 /* SSAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FB1C7318C1C97A00D19094 /* SSAudioView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +232,16 @@
 		B088C6B818BF9CE400B07B6F /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
 		B088C6BA18BFBE3E00B07B6F /* SSColorButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSColorButtonView.h; sourceTree = "<group>"; };
 		B088C6BB18BFBE3E00B07B6F /* SSColorButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSColorButtonView.m; sourceTree = "<group>"; };
+		B0FB1C6418C1C80600D19094 /* LedRemoteAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedRemoteAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FB1C6518C1C80600D19094 /* LedRemote copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LedRemote copy-Info.plist"; path = "/Volumes/Data/Users/tijn/Documents/Programming/BLELedController/iOS/LedRemote copy-Info.plist"; sourceTree = "<absolute>"; };
+		B0FB1C6618C1C87F00D19094 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B0FB1C6818C1C88500D19094 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		B0FB1C6A18C1C8E900D19094 /* Audio_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Audio_iPhone.storyboard; sourceTree = "<group>"; };
+		B0FB1C6C18C1C90B00D19094 /* Audio_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Audio_iPad.storyboard; sourceTree = "<group>"; };
+		B0FB1C6F18C1C93A00D19094 /* SSAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAudioViewController.h; sourceTree = "<group>"; };
+		B0FB1C7018C1C93A00D19094 /* SSAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAudioViewController.m; sourceTree = "<group>"; };
+		B0FB1C7218C1C97A00D19094 /* SSAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAudioView.h; sourceTree = "<group>"; };
+		B0FB1C7318C1C97A00D19094 /* SSAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAudioView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +266,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B0FB1C3318C1C80600D19094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FB1C6918C1C88500D19094 /* CoreAudio.framework in Frameworks */,
+				B0FB1C6718C1C87F00D19094 /* AVFoundation.framework in Frameworks */,
+				B0FB1C3418C1C80600D19094 /* CoreBluetooth.framework in Frameworks */,
+				B0FB1C3518C1C80600D19094 /* CoreGraphics.framework in Frameworks */,
+				B0FB1C3618C1C80600D19094 /* UIKit.framework in Frameworks */,
+				B0FB1C3718C1C80600D19094 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -201,6 +289,7 @@
 				B027583918BC8DEC007E3925 /* LedControllerTests */,
 				B027581018BC8DEB007E3925 /* Frameworks */,
 				B027580F18BC8DEB007E3925 /* Products */,
+				B0FB1C6518C1C80600D19094 /* LedRemote copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +298,7 @@
 			children = (
 				B027580E18BC8DEB007E3925 /* LedRemote.app */,
 				B027583218BC8DEC007E3925 /* LedRemoteTests.xctest */,
+				B0FB1C6418C1C80600D19094 /* LedRemoteAudio.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,6 +306,8 @@
 		B027581018BC8DEB007E3925 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0FB1C6818C1C88500D19094 /* CoreAudio.framework */,
+				B0FB1C6618C1C87F00D19094 /* AVFoundation.framework */,
 				B027584918BC8E14007E3925 /* CoreBluetooth.framework */,
 				B027581118BC8DEB007E3925 /* Foundation.framework */,
 				B027581318BC8DEB007E3925 /* CoreGraphics.framework */,
@@ -274,6 +366,8 @@
 			children = (
 				B027582318BC8DEB007E3925 /* Main_iPhone.storyboard */,
 				B027582618BC8DEB007E3925 /* Main_iPad.storyboard */,
+				B0FB1C6A18C1C8E900D19094 /* Audio_iPhone.storyboard */,
+				B0FB1C6C18C1C90B00D19094 /* Audio_iPad.storyboard */,
 				B027582918BC8DEB007E3925 /* SSViewController.h */,
 				B027582A18BC8DEB007E3925 /* SSViewController.m */,
 				B027584B18BC9135007E3925 /* SSButtonGridView.h */,
@@ -284,6 +378,10 @@
 				B027586918BCEC41007E3925 /* SSColorAnimator.m */,
 				B088C6BA18BFBE3E00B07B6F /* SSColorButtonView.h */,
 				B088C6BB18BFBE3E00B07B6F /* SSColorButtonView.m */,
+				B0FB1C6F18C1C93A00D19094 /* SSAudioViewController.h */,
+				B0FB1C7018C1C93A00D19094 /* SSAudioViewController.m */,
+				B0FB1C7218C1C97A00D19094 /* SSAudioView.h */,
+				B0FB1C7318C1C97A00D19094 /* SSAudioView.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -410,6 +508,23 @@
 			productReference = B027583218BC8DEC007E3925 /* LedRemoteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B0FB1C2218C1C80600D19094 /* LedRemoteAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0FB1C6118C1C80600D19094 /* Build configuration list for PBXNativeTarget "LedRemoteAudio" */;
+			buildPhases = (
+				B0FB1C2318C1C80600D19094 /* Sources */,
+				B0FB1C3318C1C80600D19094 /* Frameworks */,
+				B0FB1C3818C1C80600D19094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LedRemoteAudio;
+			productName = LedController;
+			productReference = B0FB1C6418C1C80600D19094 /* LedRemoteAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -448,6 +563,7 @@
 			targets = (
 				B027580D18BC8DEB007E3925 /* LedRemote */,
 				B027583118BC8DEC007E3925 /* LedRemoteTests */,
+				B0FB1C2218C1C80600D19094 /* LedRemoteAudio */,
 			);
 		};
 /* End PBXProject section */
@@ -508,6 +624,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B0FB1C3818C1C80600D19094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FB1C3918C1C80600D19094 /* Main_iPad.storyboard in Resources */,
+				B0FB1C3A18C1C80600D19094 /* fire-icon@2x.png in Resources */,
+				B0FB1C6E18C1C91400D19094 /* Audio_iPhone.storyboard in Resources */,
+				B0FB1C3B18C1C80600D19094 /* fear-icon.png in Resources */,
+				B0FB1C3C18C1C80600D19094 /* disco-icon.png in Resources */,
+				B0FB1C3D18C1C80600D19094 /* hearth-icon.png in Resources */,
+				B0FB1C3E18C1C80600D19094 /* sadness-icon@2x.png in Resources */,
+				B0FB1C3F18C1C80600D19094 /* surprice-icon.png in Resources */,
+				B0FB1C4018C1C80600D19094 /* magic-icon@2x.png in Resources */,
+				B0FB1C6D18C1C90C00D19094 /* Audio_iPad.storyboard in Resources */,
+				B0FB1C4118C1C80600D19094 /* fire-icon.png in Resources */,
+				B0FB1C4218C1C80600D19094 /* Images.xcassets in Resources */,
+				B0FB1C4318C1C80600D19094 /* explosion-icon@2x.png in Resources */,
+				B0FB1C4418C1C80600D19094 /* hearthbeat-icon.png in Resources */,
+				B0FB1C4518C1C80600D19094 /* sunrise-icon@2x.png in Resources */,
+				B0FB1C4618C1C80600D19094 /* anger-icon.png in Resources */,
+				B0FB1C4718C1C80600D19094 /* happy-icon.png in Resources */,
+				B0FB1C4818C1C80600D19094 /* 3-icon.png in Resources */,
+				B0FB1C4918C1C80600D19094 /* 3-icon@2x.png in Resources */,
+				B0FB1C4A18C1C80600D19094 /* hearthbeat-icon@2x.png in Resources */,
+				B0FB1C4B18C1C80600D19094 /* sunrise-icon.png in Resources */,
+				B0FB1C4C18C1C80600D19094 /* 2-icon@2x.png in Resources */,
+				B0FB1C4D18C1C80600D19094 /* Main_iPhone.storyboard in Resources */,
+				B0FB1C4E18C1C80600D19094 /* disco-icon@2x.png in Resources */,
+				B0FB1C4F18C1C80600D19094 /* disgust-icon@2x.png in Resources */,
+				B0FB1C5018C1C80600D19094 /* magic-icon.png in Resources */,
+				B0FB1C5118C1C80600D19094 /* explosion-icon.png in Resources */,
+				B0FB1C5218C1C80600D19094 /* fear-icon@2x.png in Resources */,
+				B0FB1C5318C1C80600D19094 /* 1-icon.png in Resources */,
+				B0FB1C5418C1C80600D19094 /* sadness-icon.png in Resources */,
+				B0FB1C5518C1C80600D19094 /* surprice-icon@2x.png in Resources */,
+				B0FB1C5618C1C80600D19094 /* InfoPlist.strings in Resources */,
+				B0FB1C5718C1C80600D19094 /* anger-icon@2x.png in Resources */,
+				B0FB1C5818C1C80600D19094 /* disgust-icon.png in Resources */,
+				B0FB1C5918C1C80600D19094 /* lightning-icon@2x.png in Resources */,
+				B0FB1C5A18C1C80600D19094 /* 1-icon@2x.png in Resources */,
+				B0FB1C5B18C1C80600D19094 /* water-icon.png in Resources */,
+				B0FB1C5C18C1C80600D19094 /* hearth-icon@2x.png in Resources */,
+				B0FB1C5D18C1C80600D19094 /* lightning-icon.png in Resources */,
+				B0FB1C5E18C1C80600D19094 /* happy-icon@2x.png in Resources */,
+				B0FB1C5F18C1C80600D19094 /* 2-icon.png in Resources */,
+				B0FB1C6018C1C80600D19094 /* water-icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -538,6 +703,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				B027584018BC8DEC007E3925 /* LedControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FB1C2318C1C80600D19094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FB1C2418C1C80600D19094 /* LGPeripheral.m in Sources */,
+				B0FB1C2518C1C80600D19094 /* SSButtonGridView.m in Sources */,
+				B0FB1C2618C1C80600D19094 /* CBUUID+StringExtraction.m in Sources */,
+				B0FB1C2718C1C80600D19094 /* LGCentralManager.m in Sources */,
+				B0FB1C2818C1C80600D19094 /* SSColorAnimator.m in Sources */,
+				B0FB1C2918C1C80600D19094 /* SSViewController.m in Sources */,
+				B0FB1C2A18C1C80600D19094 /* SSAppDelegate.m in Sources */,
+				B0FB1C2B18C1C80600D19094 /* LGService.m in Sources */,
+				B0FB1C7418C1C97A00D19094 /* SSAudioView.m in Sources */,
+				B0FB1C2C18C1C80600D19094 /* SSBLEController.m in Sources */,
+				B0FB1C7118C1C93A00D19094 /* SSAudioViewController.m in Sources */,
+				B0FB1C2D18C1C80600D19094 /* SSColorButtonView.m in Sources */,
+				B0FB1C2E18C1C80600D19094 /* UIImage+Extensions.m in Sources */,
+				B0FB1C2F18C1C80600D19094 /* main.m in Sources */,
+				B0FB1C3018C1C80600D19094 /* LGUtils.m in Sources */,
+				B0FB1C3118C1C80600D19094 /* SSAnimationButtonGridView.m in Sources */,
+				B0FB1C3218C1C80600D19094 /* LGCharacteristic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,6 +921,35 @@
 			};
 			name = Release;
 		};
+		B0FB1C6218C1C80600D19094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LedController/LedRemote-Prefix.pch";
+				INFOPLIST_FILE = "LedRemote copy-Info.plist";
+				PRODUCT_NAME = LedRemoteAudio;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B0FB1C6318C1C80600D19094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LedController/LedRemote-Prefix.pch";
+				INFOPLIST_FILE = "LedRemote copy-Info.plist";
+				PRODUCT_NAME = LedRemoteAudio;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -758,6 +976,15 @@
 			buildConfigurations = (
 				B027584718BC8DEC007E3925 /* Debug */,
 				B027584818BC8DEC007E3925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0FB1C6118C1C80600D19094 /* Build configuration list for PBXNativeTarget "LedRemoteAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FB1C6218C1C80600D19094 /* Debug */,
+				B0FB1C6318C1C80600D19094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

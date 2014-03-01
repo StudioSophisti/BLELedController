@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hPa-vj-LR9">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Audio View Controller-->
+        <scene sceneID="And-KR-rp0">
+            <objects>
+                <viewController id="hPa-vj-LR9" customClass="SSAudioViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5OB-fV-5Vo"/>
+                        <viewControllerLayoutGuide type="bottom" id="40O-wj-Uzn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="apg-fs-Vo7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJc-Kl-ILq" customClass="SSAudioView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OJc-Kl-ILq" firstAttribute="leading" secondItem="apg-fs-Vo7" secondAttribute="leading" id="7Vs-v4-ll6"/>
+                            <constraint firstItem="OJc-Kl-ILq" firstAttribute="top" secondItem="apg-fs-Vo7" secondAttribute="top" id="IXd-4Z-vjF"/>
+                            <constraint firstAttribute="trailing" secondItem="OJc-Kl-ILq" secondAttribute="trailing" id="fNH-yq-PZH"/>
+                            <constraint firstItem="40O-wj-Uzn" firstAttribute="top" secondItem="OJc-Kl-ILq" secondAttribute="bottom" id="tOd-9J-tdg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="audioView" destination="OJc-Kl-ILq" id="9wA-07-QwI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YIS-gv-Adb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307" y="31"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
